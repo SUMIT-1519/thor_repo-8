@@ -1,0 +1,86 @@
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(76,151,255,0.11);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  background: #f8fcff;
+  border-radius: 18px;
+  border: 2.5px solid #6A4C93;
+  box-shadow: 0 12px 36px 0 rgba(0, 47, 109, 0.18);
+  width: 400px;
+  padding: 0;
+  font-family: 'Avenir', 'Helvetica Neue', Arial, sans-serif;
+  animation: popIn 0.32s ease-out;
+  overflow: hidden;
+  outline: none;
+}
+
+.header {
+  background: #e5f3ff;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1.5px solid #cae3fe;
+  padding: 22px 22px 12px 30px;
+}
+.title {
+  color: #3457c1;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.content {
+  padding: 12px 30px 5px 30px;
+  color: #364061;
+  font-size: 1.07em;
+}
+.content p {
+  margin: 0.7em 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  padding: 16px 0 22px 0;
+}
+
+.button {
+  border: none;
+  border-radius: 9px;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 24px;
+  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.05em;
+}
+
+.buttonPrimary {
+  background: #2FBF4A;
+  color: white;
+  box-shadow: 0 2px 8px rgba(76,151,255,0.13);
+}
+.buttonPrimary:hover {
+  background: #2FBF4A;
+}
+.buttonSecondary {
+  background: #E63946;
+  color: #474132;
+  box-shadow: 0 1px 5px rgba(232,200,48,0.09);
+}
+.buttonSecondary:hover {
+  background: #E63946;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.93); opacity: 0.1; }
+  100% { transform: scale(1); opacity: 1; }
+}
